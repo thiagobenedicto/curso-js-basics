@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos DOM</title>
+    <style>
+        body {
+            background-color: rgba(168, 168, 168, 0.63);
+            font: normal 12pt Arial;
+            color: rgb(43, 42, 42);
+        }
+    </style>
+</head>
+<body>
+    <h1>Começando a utilizar DOM PORRA</h1>
+    <p>Muito bem vindo mestre Calcinha</p>
+    <p>Aprendendo a utilizar <strong>DOM</strong> em JavaScript</p>
+    <div id="click">CLIQUE AQUI</div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[1]
+        
+        /*
+        var d = window.document.getElementById('click')
+        document.write('getElementsByTagName: ' + p1.innerHTML)
+        d.style.background = 'yellow'
+        d.innerText = 'Estou aguardando...'
+        */
+       
+        var d = window.document.querySelector('div#click')
+        d.style.background = 'yellow'
+    </script>
+</body>
+</html>

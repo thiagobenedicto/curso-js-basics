@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO - Estrangeiro ou BR</title>
+</head>
+<body>
+    <h1>Sistema de verificação de nacionalidade</h1>
+    Meu país de nacimento é <input type="text" id="txtpais">
+    <input type="button" value="Validar" onclick="validapais()">
+    <div id="result">
+    <script>
+        function validapais() {
+            var txtp = document.getElementById('txtpais')
+            var resp = txtp.value
+            result.innerHTML = `Como você nasceu no país <strong>${resp}</strong>, você é `
+            if (resp == 'Brasil') {
+                result.innerHTML += `Brasileiro!`
+            } else {
+                result.innerHTML += `Estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>
